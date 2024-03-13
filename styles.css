@@ -6,101 +6,58 @@
 
 body {
     height: 100vh;
-    overflow-y: hidden;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
 header {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(40, 147, 40);
     color: white;
-}
-
-ul {
-    display: flex;
-    margin: 1rem;
-}
-
-li {
-    list-style: none;
-    margin: 0 2rem;
-    cursor: pointer;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
     padding: 2rem;
-    justify-content: center;
-    background-color: #f5f5f5;
+    text-align: center;
 }
 
-.cards {
-    width: 280px;
-    height: 350px;
-    background-color: white;
-    border: solid 1px gray;
-    border-radius: 1rem;
-    padding: 1rem;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    height: 450px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 img {
-    width: 250px;
-    height: 150px;
-    border-radius: 1rem;
+    height: 300px;
+    width: 300px;
 }
 
-.boton {
-    background-color: green;
-    color: white;
-    cursor: pointer;
-    padding: 1rem;
+button {
     font-size: 20px;
     border-style: none;
-    border-radius: 1rem;
+    cursor: pointer;
+    background-color: green;
+    padding: .5rem;
+    border-radius: 5px;
+    transition: ease-in-out .3s;
 }
 
-.boton:hover {
-    transform: scale(1.1);
-    background-color: rgba(0, 128, 0, 0.919);
-    transition: ease-in-out .30s;
+button:hover {
+    transform: scale(1.2);
 }
 
-.boton:active{
+button:active {
     transform: scale(1);
 }
 
 footer {
-    padding: 1rem;
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(63, 63, 63);
     color: white;
-    text-align: center;
-}
-
-/*Ejercicio del DOM*/
-
-#carrito {
-    position: fixed;
-    top: 2rem;
-    left: 6px;
-    width: 250px;
-    height: 100px;
-    background-color: lightgreen;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-#carrito p {
+    padding: 1rem;
     text-align: center;
 }
