@@ -6,7 +6,6 @@
 
 body {
     height: 100vh;
-    overflow-y: hidden;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
