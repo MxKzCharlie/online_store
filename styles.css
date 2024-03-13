@@ -32,6 +32,10 @@ li {
     cursor: pointer;
 }
 
+a {
+    font-style: none;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
